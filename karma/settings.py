@@ -133,3 +133,27 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Public_key - the identifier of the created company. For example: i00000000
+LIQPAY_PUBLIC_KEY = 'sandbox_i80249294312'
+
+# Private key of the created company (not available to anyone except your developer).
+# For example: a4825234f4bae72a0be04eafe9e8e2bada209255
+LIQPAY_PRIVATE_KEY = 'sandbox_mZq3iaRZ25SvYrbYzIE7EPGgtMOJ8sDHiHF0IVbd'
+
+# OPTIONAL:
+
+# Payment currency. Example value: USD, EUR, RUB, UAH, BYN, KZT.
+# Additional currencies can be added by company's request.
+# Default: UAH
+LIQPAY_DEFAULT_CURRENCY = 'UAH'
+
+# Language code
+# Default: uk
+LIQPAY_DEFAULT_LANGUAGE = 'uk'
+
+# Transaction type. Possible values: pay - payment, hold - amount of hold on sender's account,
+# subscribe - regular payment, paydonate - donation, auth - card preauth
+# Default: pay
+LIQPAY_DEFAULT_ACTION = 'pay'

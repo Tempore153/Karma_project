@@ -1,0 +1,17 @@
+Index: accounts/templates/accounts/donate.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/accounts/templates/accounts/donate.html b/accounts/templates/accounts/donate.html
+--- a/accounts/templates/accounts/donate.html	(revision 943fbd6d6e757ba48194de031ed60828a1d20e11)
++++ b/accounts/templates/accounts/donate.html	(revision 622b94f1f4a09abd59c6d02f56b593f2c8272e67)
+@@ -1,6 +1,6 @@
+ {% extends 'accounts/main.html' %}
+ 
+ {% block content %}
+-    <h1> Donate </h1>
++    <h1> Donate1 </h1>
+ 
+ {% endblock %}
+\ No newline at end of file

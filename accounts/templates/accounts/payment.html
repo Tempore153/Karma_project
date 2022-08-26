@@ -1,0 +1,18 @@
+{% extends 'accounts/main.html' %}
+
+{% load static %}
+{% load i18n %}
+
+
+
+{% block content %}
+    <form action="{{ checkout_form.action }}" method="{{ checkout_form.method }}" target="_blank">
+        {{ checkout_form }}
+        <button type="submit" class="btn btn-success pull-left">
+            <i class="fa fa-credit-card"></i>
+            {% blocktrans %}Pay{% endblocktrans %}
+
+        </button>
+    </form>
+
+{% endblock %}
